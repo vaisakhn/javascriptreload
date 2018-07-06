@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport"  content="width=device-width", initial-scale="1">
+	<script type="text/javascript" src="nj.js" >
+
+
+
+
+
+	</script>
+</head>
+<body style="margin: 0 auto; padding: 100px; ">
+
+ 
+ 
+
+
+ 
+  <div id="signin">
+  	
+		<div style="  margin: auto; text-align: center;  border: 4px solid black; width: 400px">
+   	
+
+  			<label>Email </label><input type="text" id="userid" >
+        <p style=" padding-left: 110px; color:red; font-size:10px" id="msg1" ></p>
+  
+
+  			<label>Password  </label><input type="password" id="password" >
+         <p style="padding-left: 110px; color:red; font-size:10px" id="msg2"></p>
+
+   
+  		<div colspan="4" style="padding-left: 150px">
+  		   <input type="submit" name="submit" value="Submit" onclick="validateUser()">
+        </div>
+  		<div style="padding-left: 300px">
+  			 <a href="#" onclick="toggleVisibility('signup');">SignUp</a>
+  		</div>
+
+  		<div style="padding-left: 300px">
+  			  <a href="#" onclick="toggleVisibility('contact');">Contact</a>
+  		</div>
+      </div>
+  </div>
+  <div id="signup" style="display: none;">
+ 
+     <div style="margin: auto; text-align: center;  border: 4px solid black; width: 400px"> 
+
+      <label>username</label><input type="text"  id="susername">
+      <p style="padding-left: 110px; color:red; font-size:10px" id="msg3" ></p>
+
+      <label>Email</label><input type="text"  id="semail">
+      <p style="padding-left: 110px; color:red; font-size:10px" id="msg4" ></p>
+
+      <label>password </label><input type="password" id="spassword" >
+      <p style=" padding-left: 110px; color:red; font-size:10px" id="msg5" ></p>
+
+    <div style="padding-left: 150px">
+    <input type="submit"  value="signup" onclick="register()">
+    </div>
+
+  		<div style="padding-left: 300px">
+  			 <a href="#" onclick="toggleVisibility('signin');">Signin</a>
+  		</div>
+
+  
+       </div>
+  </div>
+  <div id="contact" style="display: none;">
+
+	<div  style="margin: auto; text-align: center;  border: 4px solid black; width: 400px">
+	
+
+ 			<label>Name </label><input type="text"  id="cusername" >
+ 			<p style="padding-left: 110px; color:red; font-size:10px" id="msg6" ></p>
+
+ 			<label>Email </label><input type="text"  id="cemail">
+ 			<p style="padding-left: 110px; color:red; font-size:10px" id="msg7" ></p>
+
+ 			<label>Phone </label><input type="text"  id="cphone">
+ 			<p style="padding-left: 110px; color:red; font-size:10px" id="msg8" ></p>
+
+ 			<label>Question </label>
+ 			<textarea rows="10" cols="30" id="cquestion"> </textarea>
+ 			<p style="padding-left: 110px; color:red; font-size:10px" id="msg9" ></p>
+ 
+ 		<div style="padding-left: 150px">
+ 			<input type="button" value="send" name="send" onclick="usercontact()">
+ 		</div>
+
+  		<div style="padding-left: 300px">
+  			 <a href="#" onclick="toggleVisibility('signin');">Signin</a>
+  		</div>
+
+      
+     </div>
+  </div>
+ 
+</body>
+</html>
