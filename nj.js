@@ -78,26 +78,23 @@ function register()
             var r=ValidatePassword(spassword,"msg5");
             if(p && q && r)
             { 
-            localStorage.resultname = susername.value
-          localStorage.resultPassword = spassword.value;
+                localStorage.resultname = susername.value
+                localStorage.resultPassword = spassword.value;
+                localStorage.resultMail = semail.value;
+                user = {
+                  name: susername.value,
+                  email: semail.value,
+                  password: spassword.value,
+                };
+                if (localStorage.firstentry)
+                {
+                  abc = JSON.parse(localStorage["abc"]);
+                }
 
-          localStorage.resultMail = semail.value;
-
-          user = {
-            name: susername.value,
-            email: semail.value,
-            password: spassword.value,
-          };
-          if (localStorage.firstentry)
-          {
-            abc = JSON.parse(localStorage["abc"]);
-          }
-        
-          abc.push(user);
-          localStorage.setItem("abc",JSON.stringify(abc));
-
-          localStorage.firstentry += 1;
-             alert("Signup Successfull");
+                abc.push(user);
+                localStorage.setItem("abc",JSON.stringify(abc));
+                localStorage.firstentry += 1;
+                   alert("Signup Successfull");
            }
     
 }
