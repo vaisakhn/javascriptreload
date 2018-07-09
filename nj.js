@@ -30,8 +30,8 @@ function validateUser()
             document.getElementById("msg2").innerHTML='';
           	var userid= document.getElementById('userid');
           	var password = document.getElementById('password');
-             var x=ValidateEmail(userid,"msg1");
-             var y=ValidatePassword(password,"msg2");
+            var x=ValidateEmail(userid,"msg1");
+            var y=ValidatePassword(password,"msg2");
             if(x && y)
             {
               abc = JSON.parse(localStorage["abc"]);
@@ -66,10 +66,9 @@ function validateUser()
 
 function register()
  {
-              document.getElementById("msg3").innerHTML='';
-              document.getElementById("msg4").innerHTML='';
-              document.getElementById("msg5").innerHTML='';
-
+            document.getElementById("msg3").innerHTML='';
+            document.getElementById("msg4").innerHTML='';
+            document.getElementById("msg5").innerHTML='';
           	var susername= document.getElementById('susername');
           	var semail= document.getElementById('semail');
           	var spassword=document.getElementById('spassword');
