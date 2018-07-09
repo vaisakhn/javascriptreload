@@ -30,8 +30,8 @@ function validateUser()
             document.getElementById("msg2").innerHTML='';
           	var userid= document.getElementById('userid');
           	var password = document.getElementById('password');
-             x=ValidateEmail(userid,"msg1");
-             y=ValidatePassword(password,"msg2");
+             var x=ValidateEmail(userid,"msg1");
+             var y=ValidatePassword(password,"msg2");
             if(x && y)
             {
               abc = JSON.parse(localStorage["abc"]);
@@ -73,9 +73,9 @@ function register()
           	var susername= document.getElementById('susername');
           	var semail= document.getElementById('semail');
           	var spassword=document.getElementById('spassword');
-            p=ValidateUsername(susername,"msg3");
-            q=ValidateEmail(semail,"msg4");
-            r=ValidatePassword(spassword,"msg5");
+            var p=ValidateUsername(susername,"msg3");
+            var q=ValidateEmail(semail,"msg4");
+            var r=ValidatePassword(spassword,"msg5");
             if(p && q && r)
             { 
             localStorage.resultname = susername.value
@@ -111,10 +111,10 @@ function usercontact()
       	   var cemail= document.getElementById('cemail');
       	   var cphone= document.getElementById('cphone');
            var cquestion= document.getElementById('cquestion');
-           m=ValidateUsername(cusername,"msg6");
-           n=ValidateEmail(cemail,"msg7");
-           o=ValidatePhone(cphone,"msg8");
-           k=ValidateQuestion(cquestion,"msg9");
+           var m=ValidateUsername(cusername,"msg6");
+           var n=ValidateEmail(cemail,"msg7");
+           var o=ValidatePhone(cphone,"msg8");
+           var k=ValidateQuestion(cquestion,"msg9");
            if(m&&n&&o&&k)
            {
             alert("Submitted Successfully");
